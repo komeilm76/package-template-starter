@@ -1,5 +1,3 @@
-export * from './lib/async';
-export * from './lib/hash';
-export * from './lib/number';
-
-console.log('salam');
+import lib from './lib';
+const packageTemplateStarter = lib;
+export default packageTemplateStarter;

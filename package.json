@@ -22,16 +22,17 @@
     "reset-hard": "git clean -dfx && git reset --hard && npm i",
     "prepare-release": "run-s reset-hard version",
     "dev": "npm run dev:nodemon",
-    "dev:nodemon": "nodemon",
+    "dev:nodemon": "cross-env NODE_ENV=development nodemon",
     "dev:ts-node-dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only ./src/index.ts",
-    "make-release": "npm run build && release-it"
+    "make-release": "npm run fix && npm run build && release-it"
   },
   "engines": {
     "node": ">=10"
   },
   "dependencies": {
     "@bitauth/libauth": "^1.17.1",
-    "@types/node": "^22.5.5"
+    "@types/node": "^22.5.5",
+    "cross-env": "^7.0.3"
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
