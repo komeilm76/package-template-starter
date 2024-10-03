@@ -10,7 +10,13 @@
     "url": "https://github.com/komeilm76/package-template-starter.git"
   },
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "workspace",
+    "template",
+    "npm",
+    "package",
+    "starter"
+  ],
   "scripts": {
     "build": "run-p build:*",
     "build:main": "tsc -p tsconfig.json",
