@@ -11,6 +11,6 @@ export default {
     release: true,
   },
   npm: {
-    publish: true,
+    publish: false,
   },
 } satisfies Config;
